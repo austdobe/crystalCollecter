@@ -1,0 +1,49 @@
+img{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+h1{
+    width: 600px;
+    height: 100px;
+    background: orangered;
+    padding-top: 20px;
+}
+h3{
+    width: 400px;
+    background-color: darkgreen;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: white;
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+.instructions{
+    width: 900px;
+    height:330px;
+    background-color: aliceblue;
+    font-size: 16px;
+    
+}
+.randomNum{
+    height: 150px;
+    width: 400px;
+    background-color: lawngreen;
+    display: inline-block
+}
+.winlose{
+    background-color: aqua;
+    height: 150px;
+    width: 250px;
+    display: inline-block;
+}
+.score{
+    height: 150px;
+    width: 400px;
+    background-color: darkgreen;
+    color: white;
+    
+}
