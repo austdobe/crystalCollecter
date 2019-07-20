@@ -1,3 +1,6 @@
+body{
+    background-color: skyblue;
+}
 img{
     display: inline-block;
     height: 150px;
@@ -11,7 +14,7 @@ h1{
 }
 h3{
     width: 400px;
-    background-color: darkgreen;
+    background-color: seagreen;
     font-size: 18px;
     padding: 5px 10px;
     color: white;
@@ -26,24 +29,23 @@ p{
     height:330px;
     background-color: aliceblue;
     font-size: 16px;
-    
 }
-.randomNum{
-    height: 150px;
-    width: 400px;
-    background-color: lawngreen;
-    display: inline-block
-}
-.winlose{
+
+.scoreBoard{
     background-color: aqua;
     height: 150px;
-    width: 250px;
-    display: inline-block;
+    width: 200px;
+    display: block;
+
 }
-.score{
+.board{
     height: 150px;
     width: 400px;
-    background-color: darkgreen;
     color: white;
-    
+    background-color:seagreen
+}
+#randomNum,
+#score{
+    font-size: 48px;
+    font-weight:bolder; 
 }

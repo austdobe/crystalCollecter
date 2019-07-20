@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <title>Crystal collector</title>
 </head>
@@ -19,18 +20,20 @@
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time the game starts, the game will change the values of each crystal</p>
     </div>
-    <div class="randomNum"></div>
-    <div class="winlose"></div>
-    <div class="crystals">
-        <img src="https://cdn.pixabay.com/photo/2016/08/18/17/37/rock-crystal-1603480__340.jpg">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/61NHzqPotVL._SX425_.jpg">
-        <img src="http://solawakening.com/wp-content/uploads/2011/12/rose-gold-fantasy-crystal.jpg">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWxZ96UbcfaFgdNlxB_CAvFzURyZT4bKV62DWh44DCb1Ae7DVw">
+    <div class="board" style="background-color: limegreen"><span id="randomNum"></span></div>
+    <div class="scoreBoard" >
+       <p>Wins:<span id="win"></span></p>
+       <p>Loses:<span id="loses"></span></p>
     </div>
-    <h3>Your score is:</h3>
-    <div class="score"></div>
+    <div class="crystals">
+        <img id= "crystal1" src="assets/Images/Crystal1.jpg">
+        <img id= "crystal2" src="assets/Images/crystal2.jpg">
+        <img id= "crystal3" src="assets/Images/crystal3.jpg">
+        <img id= "crystal4" src="assets/Images/crystal4.jpg">
+    </div>
+    <h3 class="card-head">Your score is:</h3>
+    <div class="board"><span id="score"></span></div>
 
-    
-    <link rel="text/javascript" href="assets/Javascript/game.js">
+    <script type="text/Javascript" src="assets/Javascript/game.js"></script>
 </body>
 </html>
