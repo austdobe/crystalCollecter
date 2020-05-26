@@ -12,28 +12,52 @@
     <title>Crystal collector</title>
 </head>
 <body>
-    <h1>Crystal Collector</h1>
-    <div class="instructions">
-        <p>You will be given a random number at the start of the game. </p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
-        <p>You win the game by matching your total score the random number. You lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time the game starts, the game will change the values of each crystal</p>
+    <div class="titleHeader">
+        <h1 class="text-center">Crystal Collector</h1>
     </div>
-    <div class="board" style="background-color: limegreen"><span id="randomNum"></span></div>
-    <div class="scoreBoard" >
-       <p>Wins:<span id="win"></span></p>
-       <p>Loses:<span id="loses"></span></p>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="instructions">
+                <p>You will be given a random number at the start of the game. </p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
+                <p>You win the game by matching your total score the random number. You lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game starts, the game will change the values of each crystal</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row crystals">
+                <img class="col-lg-6" id= "crystal1" src="assets/Images/Crystal1.jpg">
+                <img class="col-lg-6" id= "crystal2" src="assets/Images/crystal2.jpg">
+                <img class="col-lg-6"id= "crystal3" src="assets/Images/crystal3.jpg">
+                <img class="col-lg-6"id= "crystal4" src="assets/Images/crystal4.jpg">
+            </div>
+        </div>
     </div>
-    <div class="crystals">
-        <img id= "crystal1" src="assets/Images/Crystal1.jpg">
-        <img id= "crystal2" src="assets/Images/crystal2.jpg">
-        <img id= "crystal3" src="assets/Images/crystal3.jpg">
-        <img id= "crystal4" src="assets/Images/crystal4.jpg">
-    </div>
-    <h3 class="card-head">Your score is:</h3>
-    <div class="board"><span id="score"></span></div>
+    <div class="row text-center score">
+        <div class="col-lg-4 text-center">
+            <div class="board">
+                <h4>Current Target Number</h4>
+                <span id="randomNum"></span>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="scoreBoard">
+                <h5>Score Board</h5>
+                <p>Wins:<span id="win"></span></p>
+                <p>Loses:<span id="loses"></span></p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="board">
+                <h3>Your score is:</h3>
+                <div >
+                    <span id="score"></span>
+                </div>
+            </div>
+        </div>
 
+    </div>
     <script type="text/Javascript" src="assets/Javascript/game.js"></script>
 </body>
 </html>
